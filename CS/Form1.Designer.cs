@@ -51,8 +51,7 @@
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";
             series1.ArgumentDataMember = "Region";
-            series1.DataFilters.ClearAndAddRange(new DevExpress.XtraCharts.DataFilter[] {
-            new DevExpress.XtraCharts.DataFilter("Year", "System.Int32", DevExpress.XtraCharts.DataFilterCondition.Equal, 2004)});
+            series1.FilterCriteria = new DevExpress.Data.Filtering.BinaryOperator("Year", 2004, DevExpress.Data.Filtering.BinaryOperatorType.Equal);
             pieSeriesLabel1.EnableAntialiasing = DevExpress.Utils.DefaultBoolean.True;
             pieSeriesLabel1.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
             pieSeriesLabel1.Position = DevExpress.XtraCharts.PieSeriesLabelPosition.Inside;
