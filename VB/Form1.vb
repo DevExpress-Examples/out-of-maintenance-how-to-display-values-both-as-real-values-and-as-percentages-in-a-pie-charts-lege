@@ -5,20 +5,20 @@ Imports DevExpress.XtraCharts
 Imports DevExpress.XtraCharts.Designer.Native
 
 Namespace PieChart
-    Partial Public Class Form1
-        Inherits Form
+	Partial Public Class Form1
+		Inherits Form
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
+		Public Sub New()
+			InitializeComponent()
+		End Sub
 
-        Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
-            ' TODO: This line of code loads data into the 'gspDataSet.GSP' table. 
-            ' You can move, or remove it, as needed.
-            Me.gSPTableAdapter.Fill(Me.gspDataSet.GSP)
+		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
+			' TODO: This line of code loads data into the 'gspDataSet.GSP' table. 
+			' You can move, or remove it, as needed.
+			Me.gSPTableAdapter.Fill(Me.gspDataSet.GSP)
 
-        End Sub
+		End Sub
 
 
-    End Class
+	End Class
 End Namespace
